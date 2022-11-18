@@ -1,0 +1,57 @@
+.masklayer{
+   position: absolute;
+   height: 100%;
+   width: 100%;
+   opacity: .5; 
+   z-index: 20;
+   background-color: #52a10a;
+}
+.game-background span{
+    z-index: 30;
+    color: aliceblue;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    width: 100%;
+}
+/* 竖屏 */
+@media screen and (orientation:portrait) {
+	.point{
+        top: 1rem !important;
+        left: 1rem !important;
+        display: inline !important;
+        text-align: left !important;
+        width: 50%  !important;
+        font-size: 12px;
+    }
+    .game-again{
+        font-size: 12px;
+    }
+}
+/* 横屏 */
+@media screen and (orientation:landscape) {
+	.point{
+        top: 1rem !important;
+        left: 1rem !important;
+        display: inline !important;
+        text-align: left !important;
+        width: 50%  !important;
+        font-size: 1rem;
+    }
+    .game-again{
+        font-size: 1rem;
+    }
+}
+canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 5;
+}
+.game-fail{
+    grid-template-columns: 1fr 1fr;
+    z-index: 999;
+    color: #FFF;
+    height: 100%;
+}

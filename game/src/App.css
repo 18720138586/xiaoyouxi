@@ -1,0 +1,36 @@
+html, body, #root {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #3a0303;
+}
+/* 竖屏 */
+@media screen and (orientation:portrait) {
+	.game-container{
+        position: relative;
+        top: 50%;
+        transform: translateY(-70%);
+        margin: 0 auto;
+    }
+}
+/* 横屏 */
+@media screen and (orientation:landscape) {
+	.game-container{
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0 auto;
+    }
+}
+
+.user-login{
+    grid-template-columns: 1fr 1fr;
+    z-index: 999;
+    color: #FFF;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    height: 100%;
+}
